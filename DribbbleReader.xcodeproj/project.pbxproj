@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B9EA0E933E66962FB801FD5 /* Pods_DribbbleReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1D8367DFA4C7C07AB6FA50 /* Pods_DribbbleReader.framework */; };
+		0974672135FDCBA3F7988CD1 /* Pods_DribbbleReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1D8367DFA4C7C07AB6FA50 /* Pods_DribbbleReader.framework */; };
 		9A0EBC311B0F4C10006FBD58 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0EBC301B0F4C10006FBD58 /* CAPSPageMenu.swift */; };
 		9A0EBC331B0F4C80006FBD58 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0EBC321B0F4C80006FBD58 /* BaseViewController.swift */; };
 		9A0EBC381B0F59EC006FBD58 /* ShotCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0EBC361B0F59EC006FBD58 /* ShotCollectionViewController.swift */; };
@@ -82,18 +82,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9AF6AB5C1B0824C000FD07E6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B9EA0E933E66962FB801FD5 /* Pods_DribbbleReader.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9AF6AB711B0824C000FD07E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9C0F33C606B8DC9DE5934C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0974672135FDCBA3F7988CD1 /* Pods_DribbbleReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,12 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AF6AB7E1B0824C000FD07E6 /* Build configuration list for PBXNativeTarget "DribbbleReader" */;
 			buildPhases = (
-				AB03083C84B00B897142FABD /* [CP] Check Pods Manifest.lock */,
+				73BA058E7E7D9D6258AB8ADD /* [CP] Check Pods Manifest.lock */,
 				9AF6AB5B1B0824C000FD07E6 /* Sources */,
-				9AF6AB5C1B0824C000FD07E6 /* Frameworks */,
 				9AF6AB5D1B0824C000FD07E6 /* Resources */,
-				97E4FC5EA40F7769D75CCD79 /* [CP] Embed Pods Frameworks */,
-				F24ABA8C780ABA7B06AA10DD /* [CP] Copy Pods Resources */,
+				9F9C0F33C606B8DC9DE5934C /* Frameworks */,
+				6505DE2F0097EB3D197140C0 /* [CP] Embed Pods Frameworks */,
+				47085EFD5F6E4A995E8FB9A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,7 +289,7 @@
 				TargetAttributes = {
 					9AF6AB5E1B0824C000FD07E6 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 2X396D2695;
+						DevelopmentTeam = Z2K494VF76;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -346,7 +346,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		97E4FC5EA40F7769D75CCD79 /* [CP] Embed Pods Frameworks */ = {
+		47085EFD5F6E4A995E8FB9A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleReader/Pods-DribbbleReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6505DE2F0097EB3D197140C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,7 +376,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleReader/Pods-DribbbleReader-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB03083C84B00B897142FABD /* [CP] Check Pods Manifest.lock */ = {
+		73BA058E7E7D9D6258AB8ADD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,21 +389,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F24ABA8C780ABA7B06AA10DD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleReader/Pods-DribbbleReader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -555,11 +555,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2X396D2695;
+				DEVELOPMENT_TEAM = Z2K494VF76;
 				INFOPLIST_FILE = DribbbleReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashigawkp.DribbbleReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashigawkp.DribbbleReadera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DribbbleReader/DribbbleReader-Bridging-Header.h";
@@ -576,11 +576,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2X396D2695;
+				DEVELOPMENT_TEAM = Z2K494VF76;
 				INFOPLIST_FILE = DribbbleReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashigawkp.DribbbleReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashigawkp.DribbbleReadera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DribbbleReader/DribbbleReader-Bridging-Header.h";
